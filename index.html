@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEEE Student Branch – Founding Members Registration</title>
+  <meta name="description" content="نموذج الانضمام للفريق التأسيسي لـ IEEE Student Branch داخل الجامعة – مبادرة طلابية تقنية لبناء مجتمع هندسي وتقني متميز.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-wrapper">
+
+  <!-- ===== HEADER ===== -->
+  <div class="form-header">
+    <div class="header-bg-pattern"></div>
+    <div class="header-grid-overlay"></div>
+    <div class="header-top-bar">
+      <img src="assets/college_logo.png" alt="College Logo" class="top-logo">
+      <img src="assets/ieee_badge.png" alt="IEEE Logo" class="top-logo">
+    </div>
+    
+    <div class="header-content">
+      <div class="header-badge">
+        <span class="dot"></span>
+        <span>التسجيل مفتوح الآن</span>
+      </div>
+      <h1 class="header-title">IEEE Student Branch</h1>
+      <p class="header-subtitle">نموذج الانضمام للفريق التأسيسي لـ IEEE داخل الجامعة</p>
+      <div class="header-divider"></div>
+      <p class="header-description">
+        نعمل على بناء مجتمع تقني طلابي داخل الجامعة بهدف تطوير مهارات الطلاب في مجالات الأمن السيبراني، الذكاء الاصطناعي، البرمجة، الشبكات، والابتكار الهندسي. نسعى لتنظيم ورش عمل وفعاليات تقنية، بناء فرق متخصصة، المشاركة في المسابقات المحلية والدولية، وتعزيز حضور الجامعة في المجالات التقنية والهندسية. إذا كنت تطمح لتكون جزءًا من هذه المبادرة التأسيسية، نرحب بك!
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== PROGRESS ===== -->
+  <div class="progress-container">
+    <div class="progress-info">
+      <span class="progress-label">نسبة إكمال النموذج</span>
+      <span class="progress-count">0%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+  </div>
+
+  <form id="ieee-form" novalidate>
+
+    <!-- ===== SECTION 1: Personal Info ===== -->
+    <div class="form-section">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <div class="section-title-group">
+          <h2 class="section-title">المعلومات الشخصية</h2>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="full-name">
+          <span class="required">*</span> الاسم الكامل
+        </label>
+        <input type="text" id="full-name" name="full_name" class="field-input" placeholder="أدخل اسمك الكامل" required>
+        <div class="field-error" id="full-name-error"></div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="university-id">
+          <span class="required">*</span> الرقم الجامعي
+        </label>
+        <input type="text" id="university-id" name="university_id" class="field-input" placeholder="أدخل رقمك الجامعي" required>
+        <div class="field-error" id="university-id-error"></div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="major">
+          <span class="required">*</span> التخصص
+        </label>
+        <input type="text" id="major" name="major" class="field-input" required>
+        <div class="field-error" id="major-error"></div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="year">
+          <span class="required">*</span> السنة الدراسية
+        </label>
+        <select id="year" name="year" class="field-select" required>
+          <option value="" disabled selected>اختر السنة الدراسية</option>
+          <option value="1">السنة الأولى</option>
+          <option value="2">السنة الثانية</option>
+          <option value="3">السنة الثالثة</option>
+          <option value="4">السنة الرابعة</option>
+        </select>
+        <div class="field-error" id="year-error"></div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="phone">
+          <span class="required">*</span> رقم الهاتف / واتساب
+        </label>
+        <input type="tel" id="phone" name="phone" class="field-input" placeholder="05XXXXXXXX" required>
+        <div class="field-error" id="phone-error"></div>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 2: Interests ===== -->
+    <div class="form-section" id="interests-section">
+      <div class="section-header">
+        <div class="section-icon">💡</div>
+        <div class="section-title-group">
+          <h2 class="section-title">الاهتمامات التقنية</h2>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">
+          <span class="required">*</span> ما المجالات التي تهتم بها؟ <span class="optional">(اختر واحدًا أو أكثر)</span>
+        </label>
+        <div class="checkbox-grid">
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="cybersecurity"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🔒 Cybersecurity</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="ai"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🤖 Artificial Intelligence</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="programming"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">💻 Programming</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="networking"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🌐 Networking</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="robotics"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🦾 Robotics</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="datascience"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">📊 Data Science</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="iot"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">📡 IoT</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="cloud"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">☁️ Cloud Computing</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="design"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🎨 Graphic Design</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="media"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">📹 Media & Content</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="events"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">📋 Event Organizing</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="speaking"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🎤 Public Speaking</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="leadership"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">👑 Leadership & Management</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="interests" value="other"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">✏️ أخرى (Other)</span></label>
+        </div>
+        <div class="field-error" id="interests-error">يرجى اختيار مجال واحد على الأقل</div>
+      </div>
+
+      <div class="field-group" id="other-interest-field">
+        <label class="field-label" for="other-interest-text">
+          <span class="optional">(اختياري)</span> حدد المجال الآخر
+        </label>
+        <input type="text" id="other-interest-text" name="other_interest" class="field-input" placeholder="اذكر المجال الذي تهتم به...">
+      </div>
+    </div>
+
+    <!-- ===== SECTION 3: Experience ===== -->
+    <div class="form-section" id="experience-section">
+      <div class="section-header">
+        <div class="section-icon">⚡</div>
+        <div class="section-title-group">
+          <h2 class="section-title">الخبرات والمهارات</h2>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">
+          <span class="optional">(اختياري)</span> ما هي خبراتك السابقة؟
+        </label>
+        <div class="checkbox-grid">
+          <label class="checkbox-item"><input type="checkbox" name="experience" value="technical"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">💻 خبرة تقنية</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="experience" value="org"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">📋 خبرة تنظيمية</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="experience" value="media"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🎨 خبرة إعلامية/تصميم</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="experience" value="leader"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">👑 خبرة قيادية</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="experience" value="none"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🌱 لا يوجد خبرة سابقة</span></label>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">
+          <span class="optional">(اختياري)</span> هل سبق لك المشاركة في أي مما يلي؟
+        </label>
+        <div class="checkbox-grid">
+          <label class="checkbox-item"><input type="checkbox" name="participation_history" value="club"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🏛️ نادٍ طلابي</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="participation_history" value="competition"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🏆 مسابقة تقنية</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="participation_history" value="volunteer"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🤝 تطوع في فعالية</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="participation_history" value="none"><span class="custom-checkbox"><svg viewBox="0 0 16 16"><polyline points="3 8 7 12 13 4"/></svg></span><span class="checkbox-label">🚀 لم يسبق لي المشاركة</span></label>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="skills-text">
+          <span class="optional">(اختياري)</span> هل هناك مهارات أخرى تود ذكرها؟
+        </label>
+        <input type="text" id="skills-text" name="additional_skills" class="field-input" placeholder="مثال: Photoshop, Python, Public Speaking...">
+      </div>
+    </div>
+
+    <!-- ===== SECTION 4: Participation Type ===== -->
+    <div class="form-section" id="participation-section">
+      <div class="section-header">
+        <div class="section-icon">🎯</div>
+        <div class="section-title-group">
+          <h2 class="section-title">نوع المشاركة</h2>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">
+          <span class="required">*</span> كيف ترغب أن تكون مشاركتك؟
+        </label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="participation" value="general"><span class="custom-radio"></span><span class="radio-label">👥 عضو عام</span></label>
+          <label class="radio-item"><input type="radio" name="participation" value="technical"><span class="custom-radio"></span><span class="radio-label">💻 عضو في الفريق التقني</span></label>
+          <label class="radio-item"><input type="radio" name="participation" value="events"><span class="custom-radio"></span><span class="radio-label">📋 عضو في فريق التنظيم والفعاليات</span></label>
+          <label class="radio-item"><input type="radio" name="participation" value="media"><span class="custom-radio"></span><span class="radio-label">🎨 عضو في فريق الإعلام والتصميم</span></label>
+          <label class="radio-item"><input type="radio" name="participation" value="relations"><span class="custom-radio"></span><span class="radio-label">🤝 عضو في فريق العلاقات والشراكات</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 5: Motivation ===== -->
+    <div class="form-section">
+      <div class="section-header">
+        <div class="section-icon">🚀</div>
+        <div class="section-title-group">
+          <h2 class="section-title">الدافع والانضمام</h2>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="motivation">
+          <span class="required">*</span> لماذا ترغب بالانضمام إلى IEEE Student Branch؟
+        </label>
+        <textarea id="motivation" name="motivation" class="field-textarea" placeholder="شاركنا دوافعك وطموحاتك..." required></textarea>
+        <div class="field-error" id="motivation-error"></div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="expectations">
+          <span class="optional">(اختياري)</span> ماذا تتوقع أن تستفيد من وجودك معنا؟
+        </label>
+        <textarea id="expectations" name="expectations" class="field-textarea" placeholder="ما الذي تأمل تحقيقه من خلال عضويتك..."></textarea>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="wishes">
+          <span class="optional">(اختياري)</span> ما الشيء الذي تتمنى أن يقدمه الفرع للطلاب داخل الجامعة؟
+        </label>
+        <textarea id="wishes" name="wishes" class="field-textarea" placeholder="أفكارك ومقترحاتك مرحّب بها..."></textarea>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 6: Availability ===== -->
+    <div class="form-section">
+      <div class="section-header">
+        <div class="section-icon">📅</div>
+        <div class="section-title-group">
+          <h2 class="section-title">التوفر والالتزام</h2>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="commitment">
+          <span class="required">*</span> هل تستطيع الالتزام بحضور الاجتماعات؟
+        </label>
+        <select id="commitment" name="commitment" class="field-select" required>
+          <option value="" disabled selected>اختر الإجابة</option>
+          <option value="yes">نعم، بالتأكيد</option>
+          <option value="mostly">في الغالب نعم</option>
+          <option value="sometimes">أحيانًا حسب الظروف</option>
+          <option value="uncertain">غير متأكد حاليًا</option>
+        </select>
+        <div class="field-error" id="commitment-error"></div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="intro-session">
+          <span class="required">*</span> هل تحتاج إلى جلسة تعريفية عن IEEE أم أنك تعرفها مسبقًا؟
+        </label>
+        <select id="intro-session" name="intro_session" class="field-select" required>
+          <option value="" disabled selected>اختر الإجابة</option>
+          <option value="need_intro">نعم، أحتاج إلى جلسة تعريفية</option>
+          <option value="know_it">لا، أعرفها مسبقًا</option>
+        </select>
+        <div class="field-error" id="intro-session-error"></div>
+      </div>
+    </div>
+
+    <!-- ===== SUBMIT ===== -->
+    <div class="form-section submit-section">
+      <button type="submit" class="submit-btn">
+        <span>📨 إرسال الطلب</span>
+      </button>
+    </div>
+
+  </form>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="form-footer">
+    <p>IEEE Student Branch – مبادرة طلابية تقنية داخل الجامعة</p>
+  </div>
+
+</div>
+
+<!-- ===== SUCCESS MODAL ===== -->
+<div class="modal-overlay" id="success-modal">
+  <div class="modal-content">
+    <div class="modal-icon">
+      <svg viewBox="0 0 24 24"><polyline points="5 12 10 17 19 7"/></svg>
+    </div>
+    <h3 class="modal-title">تم إرسال طلبك بنجاح! 🎉</h3>
+    <p class="modal-message">
+      شكرًا لاهتمامك بالانضمام إلى المجتمع التأسيسي لـ IEEE داخل الجامعة.
+      سيتم مراجعة الطلبات والتواصل مع المهتمين قريبًا لتنظيم الخطوات القادمة.
+      <br><br>
+      نتطلع لرؤيتك ضمن الفريق! 🚀
+    </p>
+    <button class="modal-close-btn" onclick="closeModal()">إغلاق</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
